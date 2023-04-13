@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css">
+        <title>table-status-modal</title>
+        
+    </head>
+    <body>
+        <top>
+            <top-table-info>
+                <p class="table-no">Table 1234</p>
+                <img src=exit-32px.svg></img>
+            </top-table-info>
+            <top-order-info>
+                <order-time>
+                    <img src=clock-32px.svg></img>
+                    <p>order time : 12:30</p>
+                </order-time>
+                <elapsed-time>
+                    <p>before 20min</p>
+                </elapsed-time>
+            </top-order-info>
+        </top>
+
+        <mid>
+            <nav class="tabs">
+                <ul>
+                    <li class="order-list tab-selected"><p>order list</p></li>
+                    <li class="diner-info tab-not-selected"><p>diner info</p></li>
+                </ul>
+            </nav>
+            <tab-order-list>
+                <mid-order-info>
+                    <p class="order-no">#1234</p>
+                    <p class="elapsed-time">before 20min</p>
+
+                    <div class="printer-btn"><img src=printer-32px.svg></img></div>
+                    <div class="check-all-btn">Check all</div>
+                </mid-order-info>
+
+                
+
+                <div class="seperator"></div>
+                
+
+                <order-item>
+                    <p class="dish-name">{dish name}</p>
+                    <p class="dish-count">123</p>
+                    <p class="dish-amount">{123,456,789}원</p>
+                    <div class="check-box">
+                        <img src=checkbox_off_48px.svg></img>
+                    </div>
+                </order-item>
+                <order-item>
+                    <p class="dish-name">{dish name}</p>
+                    <p class="dish-count">123</p>
+                    <p class="dish-amount">{123,456,789}원</p>
+                    <div class="check-box"><img src=checkbox_off_48px.svg></img></div>
+                </order-item>
+                <order-item>
+                    <p class="dish-name">{dish name}</p>
+                    <p class="dish-count">123</p>
+                    <p class="dish-amount">{123,456,789}원</p>
+                    <div class="check-box"><img src=checkbox_off_48px.svg></img></div>
+                </order-item>
+                <order-item>
+                    <p class="dish-name">{dish name}</p>
+                    <p class="dish-count">123</p>
+                    <p class="dish-amount">{123,456,789}원</p>
+                    <div class="check-box"><img src=checkbox_off_48px.svg></img></div>
+                </order-item>
+                <order-item>
+                    <p class="dish-name">{dish name}</p>
+                    <p class="dish-count">123</p>
+                    <p class="dish-amount">{123,456,789}원</p>
+                    <div class="check-box"><img src=checkbox_off_48px.svg></img></div>
+                </order-item>
+
+                <order-sum>
+                    <p>Sum</p>
+                    <p class="total-amount">123,456,789원</p>
+                </order-sum>
+            </tab-order-list>
+            <tab-diner-info class="hide">
+                <div class="tab-diner-info-top">
+                    <ul class="total-order-no">
+                        <li class="order-no">#60</li>
+                        <li class="order-no">#61</li>
+                        <li class="order-no">#62</li>
+                    </ul>
+                    <div class="seperator"></div>
+                </div>
+                <div class="diner-info-list">
+                    <div class="diner-info">
+                        <div class="profile">
+                            <img src=profile_40px.svg></img>
+                        </div>
+                        <div class="nickname"><p>Jun</p></div>
+                        <div class="visit-cnt"><p>2nd visit</p></div>
+                        <div class="kickout-btn"><p>내보내기</p></div>
+                    </div>
+                    <div class="diner-info">
+                        <div class="profile">
+                            <img src=profile_40px.svg></img>
+                        </div>
+                        <div class="nickname"><p>Jun</p></div>
+                        <div class="visit-cnt"><p>2nd visit</p></div>
+                        <div class="kickout-btn"><p>내보내기</p></div>
+                    </div>
+                </div>
+
+                <order-sum>
+                    <p>Sum</p>
+                    <p class="total-amount">123,456,789원</p>
+                </order-sum>
+            </tab-diner-info>
+        </mid>
+
+        <bottom>
+            <div class="clear-btn"><p>Clear the table</p></div>
+        </bottom>
+
+        <script src="modal.js"></script>
+    </body>
+</html>

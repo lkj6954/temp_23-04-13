@@ -1,0 +1,259 @@
+html,
+body {
+  height: 100%;
+}
+
+p {
+  font-weight: bold;
+}
+
+body {
+  box-sizing: border-box;
+  width: 779px;
+  border-radius: 8px;
+  border: 1px solid #ffa012;
+  padding: 24px 48px;
+  font-family: "Noto Sans KR";
+  display: flex;
+  flex-direction: column;
+}
+body top {
+  display: flex;
+  flex-direction: column;
+}
+body top > :not(:last-child) {
+  margin-bottom: 16px;
+}
+body top top-table-info {
+  display: flex;
+  justify-content: space-between;
+}
+body top top-table-info p {
+  font-size: 32px;
+  margin: 0;
+}
+body top top-order-info {
+  display: flex;
+}
+body top order-time {
+  display: flex;
+  margin-right: 48px;
+  font-size: 18px;
+}
+body top order-time > :first-child {
+  margin-right: 8px;
+}
+body mid {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  overflow: auto;
+}
+body mid nav ul {
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+body mid nav ul li {
+  font-size: 18px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px 60px;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid #ffa012;
+}
+body mid nav ul li p {
+  margin: 0;
+}
+body mid tab-order-list {
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 43px;
+  border: 1px solid #ffa012;
+  border-radius: 0px 8px 8px 8px;
+}
+body mid tab-order-list > :not(:last-child) {
+  margin-bottom: 16px;
+}
+body mid tab-order-list mid-order-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+body mid tab-order-list mid-order-info p {
+  font-size: 24px;
+  margin: 0;
+}
+body mid tab-order-list mid-order-info .order-no {
+  width: 104px;
+}
+body mid tab-order-list mid-order-info .elapsed-time {
+  flex-grow: 1;
+}
+body mid tab-order-list mid-order-info .printer-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  background: #ffa012;
+  border-radius: 8px;
+  margin-right: 48px;
+}
+body mid tab-order-list mid-order-info .check-all-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background: #ffa012;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+body mid tab-order-list order-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+body mid tab-order-list order-item p {
+  font-size: 24px;
+  margin: 0;
+}
+body mid tab-order-list order-item .dish-name {
+  flex-grow: 1;
+}
+body mid tab-order-list order-sum {
+  display: flex;
+  justify-content: space-between;
+}
+body mid tab-order-list order-sum p {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+body mid tab-order-list order-sum .total-amount {
+  margin-right: 64px;
+}
+body mid tab-diner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #ffa012;
+  border-radius: 0px 8px 8px 8px;
+  flex-grow: 1;
+  overflow: auto;
+  padding: 16px 43px;
+  gap: 16px;
+}
+body mid tab-diner-info ul,
+body mid tab-diner-info .seperator,
+body mid tab-diner-info .diner-info,
+body mid tab-diner-info order-sum {
+  width: 597px;
+  box-sizing: border-box;
+}
+body mid tab-diner-info li {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0;
+}
+body mid tab-diner-info .total-order-no {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 16.5px 0;
+}
+body mid tab-diner-info .diner-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+body mid tab-diner-info .diner-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+body mid tab-diner-info .diner-info .visit-cnt p,
+body mid tab-diner-info .diner-info .nickname p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+body mid tab-diner-info .diner-info .nickname {
+  flex-grow: 1;
+}
+body mid tab-diner-info .diner-info .kickout-btn {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background: #ffa012;
+  border: 1px solid #ffa012;
+  border-radius: 8px;
+}
+body mid tab-diner-info .diner-info .kickout-btn p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+body mid tab-diner-info order-sum {
+  display: flex;
+  justify-content: space-between;
+}
+body mid tab-diner-info order-sum p {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+body mid tab-diner-info order-sum .total-amount {
+  margin-right: 64px;
+}
+body mid .seperator {
+  border-bottom: 1px solid #bbbbbb;
+}
+body bottom .clear-btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+  background: #ffa012;
+  border: 1px solid #ffa012;
+  border-radius: 8px;
+  color: #ffffff;
+}
+body bottom p {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tab-selected {
+  background: #ffa012;
+  color: #ffffff;
+}
+
+.tab-not-selected {
+  background: #ffffff;
+  color: #ffa012;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
